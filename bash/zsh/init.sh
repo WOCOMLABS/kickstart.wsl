@@ -1,7 +1,5 @@
 #!/bin/bash
 
-echo Installing Zsh
-
 sudo apt install zsh -y
 
 # Set Zsh as the default shell

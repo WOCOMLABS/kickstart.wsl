@@ -1,7 +1,5 @@
 #!/bin/bash
 
-echo Installing Fonts
-
 NERD_FONTS_VERSION=v3.2.1
 
 declare -A fonts
@@ -22,17 +20,17 @@ for font in "${!fonts[@]}"; do
     dest_dir="$FONT_DIR/${font,,}"
 
     # Download the font zip file
-    curl -fLo "$zip_file" "$url" > /dev/null 2>&1
+    curl -fLo "$zip_file" "$url"
 
     # Unzip the font
-    unzip -o "$zip_file" -d "$dest_dir" > /dev/null 2>&1
+    unzip -o "$zip_file" -d "$dest_dir"
 
     # Clean up the zip file
     rm "$zip_file"
 done
 
 # Refresh the font cache
-fc-cache -fv > /dev/null 2>&1
+fc-cache -fv
 
 # Verify font installations and export statuses
 if fc-list | grep -iq "JetBrainsMono"; then

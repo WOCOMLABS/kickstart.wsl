@@ -1,8 +1,6 @@
 #!/bin/bash
 
-echo Installing Neovim
-
-sudo apt install neovim -y > /dev/null 2>&1
+sudo apt install neovim -y
 
 # Verify Neovim installation
 if command -v nvim &> /dev/null; then
@@ -12,6 +10,6 @@ else
 fi
 
 # Install additional libraries for Lua build
-sudo apt install libreadline-dev -y > /dev/null 2>&1
+sudo apt install libreadline-dev -y
 
 

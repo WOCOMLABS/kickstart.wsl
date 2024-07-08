@@ -1,6 +1,6 @@
 #!/bin/bash
 
-sudo apt install curl zip make gcc ripgrep unzip xclip python3 python3-pip -y > /dev/null 2>&1
+sudo apt install curl zip make gcc ripgrep unzip xclip python3 python3-pip -y
 
 sudo ln -s /usr/bin/python3 /usr/bin/python
 

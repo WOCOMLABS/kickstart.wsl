@@ -1,7 +1,6 @@
 #!/bin/bash
 
-echo Installing Rust 
-curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y > /dev/null 2>&1
+curl --proto '=https' --tlsv1.2 -sSf https://sh.rustup.rs | sh -s -- -y
 source $HOME/.cargo/env > /dev/null 2>&1
 
 # Verify Rust installation
