@@ -17,7 +17,7 @@ chmod u+x bash/zsh/init.sh
 # ===================================== [ NEOVIM ]
 chmod u+x bash/neovim/init.sh
 ./bash/neovim/init.sh
-# ===================================== [ NEOVIM ]
+# =========================== [ NEOVIM KICKSTART ]
 chmod u+x bash/neovim/kickstart/init.sh
 ./bash/neovim/kickstart/init.sh
 # =================================== [ STARSHIP ]

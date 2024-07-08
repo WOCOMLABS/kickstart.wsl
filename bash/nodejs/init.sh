@@ -1,8 +1,9 @@
 #!/bin/bash
 
+echo Installing NodeJs
 
 # Install NVM (Node Version Manager)
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash > /dev/null 2>&1
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"
 
@@ -17,15 +18,15 @@ nvm install 22
 
 # Verify Node.js and NPM installation
 if command -v node &> /dev/null; then
-    export NODE_STATUS="󰗡"
+    export NODE_STATUS="👌"
 else
-    export NODE_STATUS=""
+    export NODE_STATUS="⛔"
 fi
 
 if command -v npm &> /dev/null; then
-    export NPM_STATUS="󰗡"
+    export NPM_STATUS="👌"
 else
-    export NPM_STATUS=""
+    export NPM_STATUS="⛔"
 fi
 
 
