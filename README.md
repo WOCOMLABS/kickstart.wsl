@@ -1,4 +1,4 @@
-# wsl.kickstart
+# kickstart.wsl
 if you work with windows sybsystem for linux and simple shell script that installs neovim + kickstarter ,  sdkman , java , gradle , kotlin  , zsh  + starship, rust
 
 Install Power Shell ( as Admin ) 
